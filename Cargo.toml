@@ -1,0 +1,11 @@
+[package]
+edition = "2021"
+name    = "modbusslave"
+version = "0.1.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio        = { default-features = false, version = "1.25.0", features = ["rt-multi-thread"] }
+tokio-modbus = { default-features = false, version = "0.6", features = ["server", "rtu"] }
+tokio-serial = { default-features = false, version = "5.4.4" }
